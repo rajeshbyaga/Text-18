@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ass.css">
+</head>
+<body>
+   <form id="bakendform">
+       <input id="name" type="text" placeholder="Name">
+       <input id="img" type="text" placeholder="imgURl">
+       <input id="logo" type="text"  placeholder="logo">
+       <input id="role" type="text" placeholder="Role">
+       <input type="submit"  ><a href="Frontend.html" ></a>
+
+   </form>
+</body>
+</html>
+
+  
+  
+
+<script>
+    document.querySelector("#bakendform").addEventListener("submit",myfunction)
+    var investorsarr=[]
+    function myfunction(){
+    var investorsobj = {
+            img: document.querySelector("#img").value,
+            name: document.querySelector("#name").value,
+            role: document.querySelector("#role").value,
+            logo: document.querySelector("#logo").value
+        }
+        investorsarr.push(investorsobj);
+        localStorage.setItem("investordata", JSON.stringify(investorsarr))
+    }
+</script>

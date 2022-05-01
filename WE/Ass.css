@@ -1,0 +1,17 @@
+#navbar{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p+img{
+    
+    height: 50px;
+   
+}
